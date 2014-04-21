@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<game>
+	<types>
+		<puzzle name="Visitor Pattern" class="VisitorPuzzleBuilder"
+			levels="3" />
+	</types>
+	<puzzles>
+		<puzzle name="Visitor Pattern">
+			<level name="1">
+				<components>
+					<component name="board" numberofrows="5" numberofcolumns="5" />
+					<component name="solutioncompiler">
+						<actions>
+							<action name="rotate (ccw)" increment="1" max="3" />
+						</actions>
+					</component>
+					<component name="toolbox">
+						<tools>
+							<tool type="HVPATH" minnumber="1" maxnumber="1" repeating="0"
+								minlength="3" maxlength="5" numberofactions="1" />
+						</tools>
+					</component>
+					<component name="boardobjects">
+						<object type="Stone" minnumber="2" maxnumber="2" />
+					</component>
+				</components>
+			</level>
+			<level name="2">
+				<components>
+					<component name="board" numberofrows="8" numberofcolumns="8" />
+					<component name="solutioncompiler">
+						<actions>
+							<action name="ignore" increment="1" max="1" />
+							<action name="rotate (ccw)" increment="0" max="3" />
+							<action name="jump" increment="1" max="1">
+								<objects>
+									<object name="Stone" />
+								</objects>
+							</action>
+						</actions>
+					</component>
+					<component name="toolbox">
+						<tools>
+							<tool type="HVPATH" minnumber="3" maxnumber="3" repeating="1"
+								minlength="1" maxlength="5" numberofactions="1" />
+						</tools>
+					</component>
+					<component name="boardobjects">
+						<object type="Stone" minnumber="3" maxnumber="3" />
+					</component>
+				</components>
+			</level>
+			<level name="3">
+				<components>
+					<component name="board" numberofrows="12"
+						numberofcolumns="12" />
+					<component name="solutioncompiler">
+						<actions>
+							<action name="ignore" increment="3" max="1" />
+							<action name="rotate (ccw)" increment="0" max="3" />
+							<action name="jump" increment="1" max="1">
+								<objects>
+									<object name="Stone" />
+								</objects>
+							</action>
+							<action name="pick" increment="1" max="1">
+								<objects>
+									<object name="Fruit" />
+									<object name="Key" />
+								</objects>
+							</action>
+							<action name="drop" increment="1" max="1">
+								<objects>
+									<object name="Lock" precondition="pick"
+										preconditiontype="Key" />
+								</objects>
+							</action>
+						</actions>
+					</component>
+					<component name="toolbox">
+						<tools>
+							<tool type="HVPATH" minnumber="4" maxnumber="5" repeating="1"
+								minlength="2" maxlength="5" numberofactions="3" />
+						</tools>
+					</component>
+					<component name="boardobjects">
+						<object type="Stone" minnumber="3" maxnumber="3" />
+						<object type="Fruit" minnumber="2" maxnumber="2" />
+					</component>
+				</components>
+			</level>
+		</puzzle>
+	</puzzles>
+</game>

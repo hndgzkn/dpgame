@@ -1,0 +1,40 @@
+body {
+background-color:#FAFAD2;
+}
+h1 {
+	color:#A52A2A;
+	font-family: arial;
+  font-size:15px;
+	}
+h2 {
+	color:#A52A2A;
+	font-family: arial;
+	font-size:12px;
+  }
+ h3 {
+	color:#A52A2A;
+	font-family: arial;
+	font-size:11px;
+}
+h4 {
+	color:#A52A2A;
+	font-family: arial;
+	font-size:10px;
+}
+table {
+  font-family: arial;
+  font-size:9px; 
+}
+p {
+	font-family: arial;
+  	font-size:9px;
+  	text-align:justify;
+  }
+ li {
+  	font-family: arial;
+  	font-size:9px;
+  	}
+a {
+  		font-family: arial;
+  	font-size:8px;
+  		}

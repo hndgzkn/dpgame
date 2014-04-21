@@ -1,0 +1,56 @@
+	<html>
+		<head>
+			<link rel="stylesheet" type="text/css" href="style.css" >
+		</head>
+	<h1>Design Patterns Game</h1>
+<hr />		<p>Design Patterns Game aims to teach <b>Object Oriented Design Patterns</b> through 
+puzzle solving. For each design pattern, there exists a corresponding puzzle type. A puzzle related to a pattern can be 
+solved by applying the related design pattern. A pattern specific compiler checks the application of the pattern to the puzzle.</p>
+	
+	<p>The game consists of four basic components: a <b>board</b>, a <b>solution-box</b>, a <b>tool-box</b> and a <b>compiler message view</b>.</p>
+	<br />	
+	<table>
+		<tr>
+			<th>Board</th>
+			<th>Solution-box</th>
+			<th>Tool-box</th>
+		</tr>
+		<tr>
+			<td><img src="board.jpeg" alt="Board" height="100" width ="100"/></td>
+			<td align="center"><img src="solutionbox.jpeg" alt="Solution-box" height="100" width="60"/></td>
+			<td><img src="toolbox.jpeg" alt="Tool-box" height="100" width="60"/></td>
+		</tr>
+		<tr>
+			<th colspan="3">Compiler Message View</th>
+		</tr>
+		<tr>
+		<td colspan="3"><img src="compiler.jpeg" alt="Compiler message view" width="260"/></td>
+		</tr>
+	</table>
+	<br />
+	<p><b>Tool-box</b> consists of tools  <img src="path4.jpeg" alt="path" width="25" height="30"/> to solve the puzzle. Each 
+	tool in the tool-box has a unique identification number.</p>
+	<p><b>Solution-box</b> is the area where the player programs the solution. The solution-box initially has one solution-area
+	<img src="solutionarea.jpeg" alt="Solution area" width="25" height="30"/>. Solution-area is used for specifying the actions 
+	that will be applied to a tool in the toolbox. So each solution-area must be associated to a tool in the tool-box using the
+	tool's identification number. Add <img src="add.jpeg" alt="run"width="40" height="15"/> button can be used to add additional
+	solution areas. Run <img src="run.jpeg" alt="run"width="40" height="15"/> button in the solution-box is used to run the created 
+	solution.</p>
+	<p><b>Compiler message view</b> is the area where the compilation errors are displayed. After the solution in the solution-box is 
+	run by pressing the Run button, the puzzle compiler checks the solution for errors. If the solution does not comply with the 
+	application of the pattern, the solution is not run and the compilation errors are viewed in the compiler message view. If the 
+	solution is correct in terms of pattern rules, the solution is executed.</p>
+	<p><b>Board</b> is the area where the solution of the puzzle is displayed. It consists of board objects. Basic board objects are 
+	<b>catcher</b>	<img src="catcher.jpeg" alt="Catcher" width="15" height="15"/> and <b>target</b> 
+	<img src="target.jpeg" alt="target" width="15" height="15"/>. There can be other <img src="fruit.jpeg" alt="fruit" width="15" height="15"/> 
+	type of board objects depending on the puzzle. Catcher is a board object that can move on the board. Target is the object that catcher 
+	tries to reach.</p>
+	
+	<p>The <strong>goal</strong> of the game is to find a solution with the tools in the tool-box that will carry catcher to target 
+	on the board.</p>
+	
+	<p>For each type of puzzle, the rules of the game change depending on the design pattern. The pattern puzzles are:</p>
+	<ul>
+	<li><a href="visitorpuzzle.html">Visitor</a></li>
+	</ul>
+</html> 
