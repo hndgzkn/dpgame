@@ -28,8 +28,8 @@ import java.awt.Image;
 public class BoardObject extends ABoardObject {
 
 	public BoardObject(Image image, char value) throws NullPointerException {
-		if (image == null)
-			throw new NullPointerException("Image cannot be null.");
+//		if (image == null)
+//			throw new NullPointerException("Image cannot be null.");
 		this.image = image;
 		this.value = value;
 	}
